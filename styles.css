@@ -182,7 +182,7 @@ footer {
         position: static;
     }
 
-    .intro, .featured, .prints {
+    .intro, .message-board, .featured, .prints {
         width: 90%;
         padding: 1rem;
     }
