@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Prints</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="h-header">
+        <img src="../logo.jpeg" alt="Math Prints Logo" class="logo">
+        <a href="../index.html" class="link"><h1 class="header-title">Math and English Prints</h1></a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="../index.html">Home</a>
+                        <a href="../prints_math.html">Math Prints</a>
+                        <a href="../prints_english.html">English Prints</a>
+                        <a href="../math.html">Math</a>
+                        <a href="../english.html">English</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="side">
+                <h3>目次</h3>
+                <ul class="cp_list">
+                  <li><a href="math1_01.html" class="link">数と式</a></li>
+                  <li><a href="math1_02.html" class="link">方程式と不等式</a></li>
+                  <li><a href="math1_03.html" class="link">二次関数</a></li>
+                  <li><a href="matha_01.html" class="link">場合の数</a></li>
+                </ul>
+            </section>
+            
+            <div class="body">
+                <h1>二次関数</h1>
+                <section class="text">
+                    <h3>二次関数の基本</h3>
+<p>二次関数は、一般的に次の形で表される関数のことを指す。</p>
+<p>
+$$ f(x) = ax^2 + bx + c $$
+</p>
+<p>ここで、\( a \)、\( b \)、\( c \)は定数であり、\( a \neq 0 \)である。二次関数のグラフは放物線となる。</p>
+
+<h3>頂点と軸</h3>
+<p>二次関数のグラフである放物線の頂点は、関数の最大値または最小値をとる点である。頂点の座標は次の公式で求めることができる。</p>
+<p>
+$$ x = -\frac{b}{2a} $$
+</p>
+<p>このときの関数の値を求めるために、頂点のy座標は次のように計算される。</p>
+<p>
+$$ y = f\left(-\frac{b}{2a}\right) = a\left(-\frac{b}{2a}\right)^2 + b\left(-\frac{b}{2a}\right) + c $$
+</p>
+<p>また、放物線の対称軸は、頂点を通る直線であり、次の式で表される。</p>
+<p>
+$$ x = -\frac{b}{2a} $$
+</p>
+
+<h3>例題1：頂点の座標を求める</h3>
+<p>二次関数 \( f(x) = 2x^2 - 4x + 1 \) の頂点の座標を求める。</p>
+<p>まず、頂点のx座標を求める。</p>
+<p>
+$$ x = -\frac{b}{2a} = -\frac{-4}{2 \cdot 2} = 1 $$
+</p>
+<p>次に、頂点のy座標を求める。</p>
+<p>
+$$ y = f(1) = 2(1)^2 - 4(1) + 1 = 2 - 4 + 1 = -1 $$
+</p>
+<p>したがって、頂点の座標は \( (1, -1) \) となる。</p>
+
+<h3>放物線の開き方</h3>
+<p>二次関数の係数 \( a \) の符号によって、放物線の開き方が決まる。</p>
+<ul>
+<li>\( a > 0 \) の場合、放物線は上に開く。</li>
+<li>\( a < 0 \) の場合、放物線は下に開く。</li>
+</ul>
+
+<h3>例題2：放物線の開き方を判断する</h3>
+<p>二次関数 \( f(x) = -3x^2 + 6x - 2 \) の放物線の開き方を判断する。</p>
+<p>この関数では、係数 \( a = -3 \) である。したがって、放物線は下に開く。</p>
+
+<h3>まとめ</h3>
+<p>二次関数の基本を理解することは、数学の多くの応用問題を解く上で非常に重要である。放物線の頂点や対称軸、開き方を理解し、具体的な例題を通じて練習することで、二次関数に関する理解を深めることができる。</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Math Prints. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

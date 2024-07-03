@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Prints</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="h-header">
+        <img src="../logo.jpeg" alt="Math Prints Logo" class="logo">
+        <a href="../index.html" class="link"><h1 class="header-title">Math and English Prints</h1></a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="../index.html">Home</a>
+                        <a href="../prints_math.html">Math Prints</a>
+                        <a href="../prints_english.html">English Prints</a>
+                        <a href="../math.html">Math</a>
+                        <a href="../english.html">English</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="side">
+                <h3>目次</h3>
+                <ul class="cp_list">
+                    <li><a href="math1_01.html" class="link">数と式</a></li>
+                    <li><a href="math1_02.html" class="link">方程式と不等式</a></li>
+                    <li><a href="math1_03.html" class="link">二次関数</a></li>
+                    <li><a href="matha_01.html" class="link">場合の数</a></li>
+                </ul>
+            </section>
+            
+            <div class="body">
+                <h1>場合の数</h1>
+                <section class="text">
+                    <h3>3.1 場合の数とは</h3>
+                    <p>場合の数とは、特定の条件を満たす結果が何通りあるかを数えることです。これは、数学における基礎的な考え方であり、確率の計算にも不可欠な概念です。</p>
+                    <br>
+                    <h3>3.2 基本の原理</h3>
+                    
+                    <p>場合の数を求める際に使う基本的な原理には、<b>加法原理</b>と<b>乗法原理</b>があります。</p>
+                    <br>
+                    <h4>加法原理</h4>
+                    <p>2つ以上の異なる事象があり、それぞれの事象が起こる場合の数を足し合わせる方法です。</p>
+                    <p>例えば、Aさんが1つの赤い帽子と2つの青い帽子を持っている場合、異なる色の帽子をかぶる方法は3通り（1通りの赤い帽子 + 2通りの青い帽子）です。</p>
+
+                    <h4>乗法原理</h4>
+                    <p>独立した事象が連続して起こる場合、それぞれの事象の起こる場合の数を掛け合わせる方法です。</p>
+
+                    <p>例えば、Aさんが3つのシャツと4つのズボンを持っている場合、異なる組み合わせの服装は12通り（3通りのシャツ × 4通りのズボン）です。</p>
+                </section>
+
+                <section class="text">
+                    <h3>3.3 具体例</h3>
+
+                    <h4>例題1: 2つのサイコロの目の組み合わせ</h4>
+                    <p>2つのサイコロを振ったときの目の組み合わせの総数を求めなさい。</p>
+
+                    <h4>解法：</h4>
+                    <p>1つのサイコロには6つの目があります。2つのサイコロを振る場合、各サイコロの目の数を掛け合わせます。</p>
+                    <p>\[ 6 \times 6 = 36 \]</p>
+                    <p>よって、組み合わせの総数は36通りです。</p>
+
+                    <h4>例題2: メニューの組み合わせ</h4>
+                    <p>レストランで前菜、メインディッシュ、デザートをそれぞれ1品ずつ選ぶとします。前菜は3種類、メインディッシュは4種類、デザートは2種類あります。異なるメニューの組み合わせの総数を求めなさい。</p>
+
+                    <h4>解法：</h4>
+                    <p>それぞれの料理の選び方を掛け合わせます。</p>
+                    <p>\[ 3 \times 4 \times 2 = 24 \]</p>
+                    <p>よって、組み合わせの総数は24通りです。</p>
+
+                    <h3>3.4 順列と組み合わせ</h3>
+                    <p>場合の数を考える際には、順列と組み合わせという2つの概念が重要です。</p>
+
+                    <h3>順列</h3>
+                    <p>順列とは、順番を考慮した並び方のことです。例えば、A、B、Cの3つの文字を並べる場合、次のように6通りの順列があります。</p>
+                    <p>\[ ABC, ACB, BAC, BCA, CAB, CBA \]</p>
+
+                    <p>n個のものをすべて並べる順列の総数は、次の式で求められます。</p>
+                    <p>\[ n! = n \times (n-1) \times \cdots \times 1\]</p>
+
+                    <p>また、n個のものからr個並べる時の縦列の総数は以下のように表されます。</p>
+                    <p>\[ _{n}\mathrm{P} {}_{r} = n \times (n-1) \times \cdots \times (n-r) \]</p>
+
+                    <h4>例題3: 3人の並び順</h4>
+                    <p>3人の生徒（A、B、C）が1列に並ぶ場合の並び順の総数を求めなさい。</p>
+
+                    <h4>解法：</h4>
+                    <p>3人の順列の総数は次のように計算されます。</p>
+
+                    <p>\[ 3! = 3 \times 2 \times 1 = 6 \]</p>
+
+                    <p>よって、並び順の総数は6通りです。</p>
+
+                    <h3>組み合わせ</h3>
+                    <p>組み合わせとは、順番を考慮しない選び方のことです。例えば、A、B、Cの3つの文字から2つを選ぶ場合、次のように3通りの組み合わせがあります。</p>
+
+                    <p>\[ AB, AC, BC \]</p>
+
+                    <p>n個のものからr個を選ぶ組み合わせの総数は、次の式で求められます。</p>
+
+                    <p>\[ _{n}\mathrm{C} \, {}_{r} = \frac{n!}{r!(n-r)!} \]</p>
+
+                    <h4>例題4: 5人から2人を選ぶ</h4>
+
+                    <p>5人の生徒（A、B、C、D、E）から2人を選ぶ場合の組み合わせの総数を求めなさい。</p>
+
+                    <h4>解法：</h4>
+
+                    <p>5人から2人を選ぶ組み合わせの総数は次のように計算されます。</p>
+
+                    <p>\[ _{5}\mathrm{C} \, {}_{2} = \frac{5!}{2!(5-2)!} = \frac{5 \times 4 \times 3!}{2 \times 1 \times 3!} = \frac{20}{2} = 10 \]</p>
+
+                    <p>よって、組み合わせの総数は10通りです。</p>
+
+                    <h3>3.5 まとめ</h3>
+
+                    <p>場合の数の基本的な考え方を学びました。場合の数を求める際には、加法原理と乗法原理を理解し、順列と組み合わせの違いをしっかり把握することが重要です。これらの原理を使って、様々な問題に対応できるようにしましょう。</p>
+            </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Math Prints. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>
