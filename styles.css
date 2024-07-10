@@ -324,13 +324,13 @@ footer {
 
 /*KaTeXの日本語フォント設定*/
 /*本文と一致させる*/
-.cjk_fallback {
+cjk_fallback {
 	font-family: var(--cocoon-default-font);
 	font-size: var(--cocoon-default-text-size);
 }
 /*KaTeXブロックのモバイル表示対応*/
 /*画面からはみ出すときは横スクロールが表示される*/
-.katex-html {
+katex-display {
 	overflow-y: hidden;
 	overflow-x: auto;
 }
@@ -367,9 +367,45 @@ footer {
         text-align: center;
         width: 100%;
     }
+
+    .body {
+        width: 100%;
+      }
+    
+    .side {
+        width: 100%;
+        padding: 5px;
+        margin-right: 15px;
+        margin-bottom: 2rem;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+      }
+    
+    .side h3 {
+        position: relative;
+        padding: 1rem .5rem;
+        text-align: center;
+      }
+      
+    .side h3:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        content: '';
+        border-radius: 3px;
+        background-image: -webkit-gradient(linear, right top, left top, from(#20af6f), to(#026eb2));
+        background-image: -webkit-linear-gradient(right, #20af6f 0%, #026eb2 100%);
+        background-image: linear-gradient(to left, #20af6f 0%, #026eb2 100%);
+      }
 }
 
 @media (max-width: 480px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
     .print-item {
         flex-basis: 100%;
     }
@@ -377,5 +413,37 @@ footer {
     .horizontal-links {
         flex-direction: column;
     }
+
+    .body {
+        width: 100%;
+      }
+    
+    .side {
+        width: 100%;
+        padding: 5px;
+        margin-right: 15px;
+        margin-bottom: 2rem;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+      }
+    
+    .side h3 {
+        position: relative;
+        padding: 1rem .5rem;
+        text-align: center;
+      }
+      
+    .side h3:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        content: '';
+        border-radius: 3px;
+        background-image: -webkit-gradient(linear, right top, left top, from(#20af6f), to(#026eb2));
+        background-image: -webkit-linear-gradient(right, #20af6f 0%, #026eb2 100%);
+        background-image: linear-gradient(to left, #20af6f 0%, #026eb2 100%);
+      }
 }
 
