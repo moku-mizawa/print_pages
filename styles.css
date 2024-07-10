@@ -322,6 +322,19 @@ footer {
     flex-shrink: 0;
 }
 
+/*KaTeXの日本語フォント設定*/
+/*本文と一致させる*/
+.cjk_fallback {
+	font-family: var(--cocoon-default-font);
+	font-size: var(--cocoon-default-text-size);
+}
+/*KaTeXブロックのモバイル表示対応*/
+/*画面からはみ出すときは横スクロールが表示される*/
+.katex-html {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
