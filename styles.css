@@ -325,13 +325,13 @@ footer {
 
 /*KaTeXの日本語フォント設定*/
 /*本文と一致させる*/
-cjk_fallback {
+.cjk_fallback {
 	font-family: var(--cocoon-default-font);
 	font-size: var(--cocoon-default-text-size);
 }
 /*KaTeXブロックのモバイル表示対応*/
 /*画面からはみ出すときは横スクロールが表示される*/
-katex-display {
+.katex-display {
 	overflow-y: hidden;
 	overflow-x: auto;
 }
