@@ -296,18 +296,19 @@ li {
 }
 
 .horizontal-links a {
+    width: 45%;
     text-decoration: none;
-    color: #007BFF;
-    background-color: #e9ecef;
+    color: #fff;
+    background-color: #6fa6ff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid #6fa6ff;
     flex-grow: 1;
     text-align: center;
 }
 
 .horizontal-links a:hover {
-    background-color: #007BFF;
+    background-color: #6fa6ff;
     color: white;
 }
 
