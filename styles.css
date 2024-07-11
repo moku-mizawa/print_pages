@@ -431,6 +431,13 @@ katex-display {
         flex-direction: column;
     }
 
+    .container {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-bottom: 50px;
+      }
+
     .body {
         width: 100%;
       }
@@ -462,5 +469,10 @@ katex-display {
         background-image: -webkit-linear-gradient(right, #20af6f 0%, #026eb2 100%);
         background-image: linear-gradient(to left, #20af6f 0%, #026eb2 100%);
       }
+    
+    .katex-display {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
 }
 
