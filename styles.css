@@ -118,7 +118,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,6 +402,13 @@ hr {
   
     .grid {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    main {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   }
 
