@@ -434,8 +434,8 @@ hr {
     }
 
     .intro, .message-board, .featured, .prints {
-        width: 90%;
-        padding: 1rem;
+        width: 95%;
+        padding: 0.5rem;
     }
 
     .print-item {
@@ -527,7 +527,7 @@ hr {
     .side {
         width: 100%;
         padding: 5px;
-        margin-right: 15px;
+        /* margin-right: 15px; */
         margin-bottom: 2rem;
         background-color: #f9f9f9;
         border-radius: 8px;
