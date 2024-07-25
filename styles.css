@@ -496,6 +496,13 @@ hr {
         background-image: -webkit-linear-gradient(right, #20af6f 0%, #026eb2 100%);
         background-image: linear-gradient(to left, #20af6f 0%, #026eb2 100%);
       }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
     
     .text{
         background-color: #f9f9f9;
@@ -532,10 +539,12 @@ hr {
         height: auto;
         display: block;
         padding-bottom: 50px;
+        align-self: center;
       }
 
-    body {
+    .body {
         width: 100%;
+        align-content: center;
       }
     
     .side {
@@ -565,6 +574,13 @@ hr {
         background-image: -webkit-linear-gradient(right, #20af6f 0%, #026eb2 100%);
         background-image: linear-gradient(to left, #20af6f 0%, #026eb2 100%);
       }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
     
     .katex-display {
         overflow-y: hidden;
