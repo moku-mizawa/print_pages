@@ -544,7 +544,7 @@ hr {
 
     .body {
         width: 100%;
-        align-content: center;
+        align-self: center;
       }
     
     .side {
