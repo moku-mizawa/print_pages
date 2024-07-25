@@ -505,6 +505,13 @@ hr {
         flex-direction: column;
     }
 
+    main {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .print-item {
         flex-basis: 100%;
     }
@@ -520,7 +527,7 @@ hr {
         padding-bottom: 50px;
       }
 
-    .body {
+    body {
         width: 100%;
       }
     
